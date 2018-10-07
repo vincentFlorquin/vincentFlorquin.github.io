@@ -124,38 +124,48 @@ $(document).ready(function () {
 </div>
 
 
-<p>+++ # Date this page was created. date = “2018-09-24”</p>
-<div id="project-title." class="section level1">
-<h1>Project title.</h1>
-<p>title = “My project”</p>
+<p>+++ # Hero widget. widget = “hero” active = true date = 2017-10-15</p>
+<p>title = &quot; &quot;</p>
+<div id="order-that-this-section-will-appear-in." class="section level1">
+<h1>Order that this section will appear in.</h1>
+<p>weight = 3</p>
 </div>
-<div id="project-summary-to-display-on-homepage." class="section level1">
-<h1>Project summary to display on homepage.</h1>
-<p>summary = “A short summary of my project.”</p>
+<div id="overlay-a-color-or-image-optional." class="section level1">
+<h1>Overlay a color or image (optional).</h1>
 </div>
-<div id="optional-image-to-display-on-homepage-relative-to-staticimg-folder." class="section level1">
-<h1>Optional image to display on homepage (relative to <code>static/img/</code> folder).</h1>
-<p>image_preview = “project.jpg”</p>
+<div id="deactivate-an-option-by-commenting-out-the-line-prefixing-it-with-." class="section level1">
+<h1>Deactivate an option by commenting out the line, prefixing it with <code>#</code>.</h1>
+<p>[header] overlay_color = “#666” # An HTML color value. overlay_img = “headers/main-header.jpg” # Image path relative to your <code>static/img/</code> folder. overlay_filter = 0.3 # Darken the image. Value in range 0-1.</p>
 </div>
-<div id="tags-can-be-used-for-filtering-projects." class="section level1">
-<h1>Tags: can be used for filtering projects.</h1>
+<div id="call-to-action-button-optional." class="section level1">
+<h1>Call to action button (optional).</h1>
 </div>
-<div id="example-tags-machine-learning-deep-learning" class="section level1">
-<h1>Example: <code>tags = [&quot;machine-learning&quot;, &quot;deep-learning&quot;]</code></h1>
-<p>tags = [“science”, “biology”]</p>
+<div id="activate-the-button-by-specifying-a-url-and-button-label-below." class="section level1">
+<h1>Activate the button by specifying a URL and button label below.</h1>
 </div>
-<div id="optional-external-url-for-project-replaces-project-detail-page." class="section level1">
-<h1>Optional external URL for project (replaces project detail page).</h1>
-<p>external_link = “”</p>
-</div>
-<div id="does-the-project-detail-page-use-math-formatting" class="section level1">
-<h1>Does the project detail page use math formatting?</h1>
-<p>math = false</p>
-</div>
-<div id="optional-featured-image-relative-to-staticimg-folder." class="section level1">
-<h1>Optional featured image (relative to <code>static/img/</code> folder).</h1>
-<p>[header] image = “headers/project-header.jpg” caption = “Image credit: <strong>Trevor Cole</strong> on Unsplash” +++</p>
-<p>Here I describe my project using Markdown formatting…</p>
+<div id="deactivate-by-commenting-out-parameters-prefixing-lines-with-." class="section level1">
+<h1>Deactivate by commenting out parameters, prefixing lines with <code>#</code>.</h1>
+<p>[cta] url = “files/cv.pdf” label = ‘<i class="fa fa-download"></i> Curriculum Vitae (PDF)’</p>
+<p>+++</p>
+<p>Vincent Florquin <br> <small>A short description of myself here</small> <br><br></p>
+<script type="text/javascript">
+  (function defer() {
+    if (window.jQuery) {
+      jQuery(document).ready(function(){
+        GetLatestReleaseInfo();
+      });
+    } else {
+      setTimeout(function() { defer() }, 50);
+    }
+  })();  
+  function GetLatestReleaseInfo() {
+    $.getJSON('https://api.github.com/repos/gcushen/hugo-academic/tags').done(function (json) {
+      let release = json[0];
+      
+      $('#academic-release').text('Latest release ' + release.name);  
+    });    
+}  
+</script>
 </div>
 
 
