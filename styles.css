@@ -1,7 +1,7 @@
 
 
 
-  
+
 /*************************************************
  *  Hugo Academic: an academic theme for Hugo.
  *  Designed by @GeorgeCushen.
@@ -77,11 +77,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
-  color: #313131;
+  color: #0B0B61;
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2.25rem;
+  font-size: 4rem;
 }
 h2 {
   margin-top: 1rem;
