@@ -254,7 +254,7 @@ small,
 }
 
 .home-section:nth-of-type(even) {
-  background-color:rgb(177, 199, 232);
+  background-color:rgb(200, 219, 247);
 }
 
 @media screen and (max-width: 768px) {
