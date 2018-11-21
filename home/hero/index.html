@@ -157,14 +157,14 @@ $(document).ready(function () {
     } else {
       setTimeout(function() { defer() }, 50);
     }
-  })();  
+  })();
   function GetLatestReleaseInfo() {
     $.getJSON('https://api.github.com/repos/gcushen/hugo-academic/tags').done(function (json) {
       let release = json[0];
-      
-      $('#academic-release').text('Latest release ' + release.name);  
-    });    
-}  
+
+      $('#academic-release').text('Latest release ' + release.name);
+    });
+}
 </script>
 </div>
 
