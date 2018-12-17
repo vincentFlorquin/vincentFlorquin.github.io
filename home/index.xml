@@ -27,7 +27,7 @@
       <pubDate>Tue, 28 Nov 2017 18:23:00 +0000</pubDate>
       
       <guid>/home/about/</guid>
-      <description>About Me I am student at the University of Mons, Belgium... [tell here a little bit about you, using Markdown formatting]</description>
+      <description>About Me I am a second year student in biology, and i study at the university of Mons, Belgium. I am 19 years old and i have been interested in biology since childhood. Before the beginning of my second year, i wasn&#39;t sure what i should do as a professionnal, and even if im still not really sure, i have been interested in toxicology and parasites subjects that we saw in Histology, physiology and bio animal.</description>
     </item>
     
     <item>
@@ -82,6 +82,15 @@
       
       <guid>/home/contact/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/home/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/about/</guid>
+      <description>code{white-space: pre;} pre:not([class]) { background-color: white; }  if (window.hljs) { hljs.configure({languages: []}); hljs.initHighlightingOnLoad(); if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) { window.setTimeout(function() { hljs.initHighlighting(); }, 0); } }  h1 { font-size: 34px; } h1.title { font-size: 38px; } h2 { font-size: 30px; } h3 { font-size: 24px; } h4 { font-size: 18px; } h5 { font-size: 16px; } h6 { font-size: 12px; } .</description>
     </item>
     
   </channel>
